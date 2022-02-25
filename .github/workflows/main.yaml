@@ -17,10 +17,10 @@ jobs:
         
       # AWS Credentials
 
-      # - name: Install CI
-      #   env:
-      #     CI: true
-      #   run: npm ci
+      - name: Install CI
+        env:
+          CI: true
+        run: npm ci
       
       - name: deploy
         run: npm run deploy
